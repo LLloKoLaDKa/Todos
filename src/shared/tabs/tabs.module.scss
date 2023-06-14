@@ -1,0 +1,30 @@
+$main_color: var(--main_color);
+$main_color_25: var(--main_color_25);
+$main_color_10: var(--main_color_10);
+
+.tab_nav {
+	display: flex;
+	gap: 2px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+
+	.tab_nav_item,
+	.tab_nav_item_active {
+		flex: 1;
+		text-align: center;
+		display: block;
+		user-select: none;
+		cursor: pointer;
+		transition: 0.2s;
+		margin-right: 2px;
+		padding: 2px 15px;
+		border-radius: 0.2rem 0.2rem 0 0;
+	}
+
+	.tab_nav_item_active {
+		transition: 0.5s;
+		border: 1px solid gainsboro;
+		border-radius: 5px;
+	}
+}
